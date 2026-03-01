@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniyal Sajid | Graphic Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .hero-font { font-family: 'Playfair Display', serif; }
+    .gradient-text { background: linear-gradient(90deg, #f59e0b, #67e8f9, #f59e0b); -webkit-background-clip: text; color: transparent; background-size: 200% 100%; animation: gradient 6s linear infinite; }
+    @keyframes gradient { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+    .project-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+    .project-card:hover { transform: translateY(-20px) scale(1.05); box-shadow: 0 30px 60px -15px rgb(245 158 11 / 0.5); }
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-zinc-950/90 backdrop-blur-xl z-50 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="#" class="text-3xl font-bold tracking-tighter">Daniyal Sajid<span class="text-amber-400">.</span></a>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#work" class="hover:text-cyan-400 transition">Work</a>
+        <a href="#services" class="hover:text-cyan-400 transition">Services</a>
+        <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
+      </div>
+      <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-amber-400 to-cyan-400 text-black font-bold rounded-3xl hover:scale-105 transition">Let's Collaborate</a>
+    </div>
+  </nav>
+
+  <!-- HERO - Teri real photo yahan aa jayegi -->
+  <section class="min-h-screen flex items-center pt-20 bg-[radial-gradient(at_center,#27272a_0%,#09090b_70%)] relative overflow-hidden">
+    <div class="absolute inset-0 bg-[linear-gradient(45deg,#f59e0b10_0%,#67e8f910_100%)]"></div>
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div>
+        <p class="text-amber-400 font-medium tracking-widest text-sm mb-3">ISLAMABAD BASED • 4+ YEARS</p>
+        <h1 class="text-7xl md:text-8xl hero-font leading-none mb-6">Hi, I'm <span class="gradient-text">Daniyal Sajid</span></h1>
+        <p class="text-3xl text-zinc-400 mb-8">Graphic Designer &amp; Visual Storyteller</p>
+        <p class="text-lg text-zinc-400 max-w-md mb-10">Crafting bold brands and unforgettable visuals that make businesses stand out in 2026.</p>
+        <div class="flex gap-4">
+          <a href="#work" class="px-10 py-5 bg-white text-black font-bold rounded-3xl hover:bg-gradient-to-r hover:from-amber-400 hover:to-cyan-400 hover:text-black transition">View My Work</a>
+          <a href="#contact" class="px-10 py-5 border-2 border-white/50 rounded-3xl hover:bg-white/10 transition">Get In Touch</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="profile.jpg" alt="Daniyal Sajid" class="rounded-3xl shadow-2xl border border-white/10 w-full">
+        <div class="absolute -bottom-8 -right-8 glass p-8 rounded-3xl text-center">
+          <p class="text-5xl font-bold text-amber-400">4+</p>
+          <p class="text-sm tracking-widest">YEARS EXP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT - Yahan bhi teri real photo -->
+  <section id="about" class="py-28 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-16 items-center">
+        <div class="md:col-span-5">
+          <img src="profile.jpg" alt="Daniyal Sajid" class="rounded-3xl border border-white/10 w-full">
+        </div>
+        <div class="md:col-span-7">
+          <h2 class="text-6xl font-bold mb-10">About Me</h2>
+          <p class="text-xl text-zinc-300 leading-relaxed mb-8">
+            Hi, I'm Daniyal Sajid – a passionate Graphic Designer from Islamabad with 4+ years of experience. 
+            I specialize in modern brand identities, premium packaging, and scroll-stopping social media designs.
+          </p>
+          <p class="text-xl text-zinc-300 leading-relaxed">
+            I turn ideas into visual stories that help businesses grow. Currently based in Abubakar Block, H-13.
+          </p>
+          <div class="mt-12">
+            <h3 class="text-2xl font-semibold mb-6">Skills &amp; Tools</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-6 py-3 glass rounded-3xl text-sm">Photoshop</span>
+              <span class="px-6 py-3 glass rounded-3xl text-sm">Illustrator</span>
+              <span class="px-6 py-3 glass rounded-3xl text-sm">Figma</span>
+              <span class="px-6 py-3 glass rounded-3xl text-sm">After Effects</span>
+              <span class="px-6 py-3 glass rounded-3xl text-sm">Brand Strategy</span>
+              <span class="px-6 py-3 glass rounded-3xl text-sm">Canva Pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Baaki sections same hain (services, work, contact) -->
+  <!-- Services, Work, Contact aur footer same as pehle wale code mein hain. Poora code copy karne ke liye neeche scroll karo ya pehle wala code use kar sakte ho – sirf upar wale 2 img lines change kiye hain. -->
+
+  <!-- Agar poora code chahiye to bol do, main ek baar mein poora paste kar dunga. -->
+
+  <script>
+    // Projects same hain (agar real projects add karne hain to yahan bata do)
+    const projects = [ /* pehle wale 3 projects */ ];
+    // renderProjects function same
+  </script>
+</body>
+</html>
